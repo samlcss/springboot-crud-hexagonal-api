@@ -1,0 +1,5 @@
+ALTER TABLE usuarios
+ADD COLUMN perfil VARCHAR(10) NOT NULL DEFAULT 'USER';
+
+UPDATE usuarios
+SET perfil = 'ADMIN';
